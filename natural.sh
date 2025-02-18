@@ -9,7 +9,7 @@ END="2026-02-13"
 start_ts=$(date -j -f "%Y-%m-%d" "$START" "+%s")
 end_ts=$(date -j -f "%Y-%m-%d" "$END" "+%s")
 
-FILES=("README.md" "src/App.js" "src/components/Header.js" "src/utils/api.js" "package.json")
+FILES=("readme.md" "app.js" "config.js" "package.json" "Procfile")
 
 MSGS=(
     "Fix cart bug" "Update UI" "Add feature" "Refactor code" "Improve performance"
