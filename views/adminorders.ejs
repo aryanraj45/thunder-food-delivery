@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   <!-- // <link rel="stylesheet" href="/css/business.css"> -->
+    <title>Document</title>
+    <title>Thunder</title>
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <!-- <script  src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>  -->
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script>
+    <script  src="js/app.js"></script> 
+    <!-- <script  src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script> -->
+
+
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"><img src="./images/unnamed.jpg"> THUNDER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../#restaurants">RESTAURANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">LOGOUT</a></li>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="/login">Login</a></li>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+<section class="order">
+    
+    <div  class="container mx-auto pt-6 px-2"><h1 class="font-bold text-lg mb-4">All Orders</h1></div>
+   <table class="w-full table-auto bg-white-400" >
+       <thead>
+           <tr>
+               <th class="px-4 py-2 text-left italic">Orders</th>
+               <th class="px-4 py-2 text-left italic">CustomerID</th>
+               <th class="px-4 py-2 text-left italic">Hostel Address</th> 
+               <th class="px-4 py-2 text-left italic">Phone Number</th>
+               <th class="px-4 py-2 text-left italic">Placed at</th>
+            </tr> 
+           
+       </thead>
+       <tbody class="adminorderbody">
+           
+       </tbody>
+
+   </table>
+</section>
+ 
+
+</body>
+</html>

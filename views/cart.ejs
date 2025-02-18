@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Document</title>
+    <title>Thunder</title>
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"><img src="./images/unnamed.jpg"> THUNDER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../#restaurants">RESTAURANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">LOGOUT</a></li>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="/login">Login</a></li>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="cart">
+        <%if(session.cart){%>
+    <div class="container mx-auto xl:w-1/2 ">
+        <div class=" flex items-stretch border-b border-gray-300 py-4">
+            <img src="/images/cart-black.png" alt="cart">
+            <h1 class="font-bold ml-4 text-4xl ">Order Summary</h1>
+        </div>
+        <div class="pizza-list"> 
+           <%for(let dish of Object.values(session.cart.items)){%>   
+            <div class="flex items-center my-2">
+                <img src="<%=dish.item.dish_imageurl%>" alt="dish" class="w-24 py-2">
+                <div class="ml-4 flex-1">
+                    <h1 class="font-bold text-2xl"><%=dish.item.dish_name%></h1>
+                </div>
+                <span class="flex-1 font-semibold"><%=dish.qty%>Pcs</span> 
+                <span class="font-bold text-lg">RS <%=dish.item.dish_price * dish.qty%></span>
+            </div>
+            <%}%>
+        </div>
+        <hr>
+    <div class="text-right py-4">
+        <div>
+            <span class="text-lg font-bold">Total Amount:</span>
+            <span class="amount text-2xl font-bold ml-2">₹ <%= session.cart.totalprice%> </span>
+        </div>
+            
+       
+    </div>
+    <!-- <form action="/orders" method="post">
+        <button type="submit">PAY NOW</button>
+    </form> -->
+    <form action="/orders" method="post" class="mt-6">
+        
+            <div>
+                <a href="/menu" class="inline-block px-3 py-1 md:px-6 md:py-2 rounded-full btn-primary text-white font-bold mt-12">Add More Items</a>   
+                <button name="pay-now" type="SUBMIT" class="inline-block px-3 py-1 md:px-6 md:py-2 rounded-full btn-primary text-white font-bold mt-12 paynow-button" value="<%= session.cart.totalprice%>">PAY NOW</button>
+            </div>
+        
+    </form>
+    <button class="inline-block px-3 py-1 md:px-6 md:py-2 rounded-full btn-primary text-white font-bold mt-12 start">START GUIDED PAYMENT</button>
+</div>
+<%}else{%>
+    <div class="py-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-2">Cart Empty!</h1>
+            <p class="text-gray-500 text-lg mb-12">You probably haven't ordered anything.<br>
+            </p>
+        <img class="w-2/5 mx-auto" src="/images/empty-cart.png" alt="cart">
+        <a href="/menu" class="bhavesh inline-block px-6 py-2 rounded-full  text-white font-bold mt-12">Go to Main Page</a>
+        
+        </div>
+    </div>
+    <%}%> 
+    </section>
+    
+    <script src="../js/aiscript.js"></script>
+</body>

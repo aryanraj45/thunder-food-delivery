@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Business Website</title>
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA==" crossorigin="anonymous" />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js" integrity="sha512-mgZL3SZ/vIooDg2mU2amX6NysMlthFl/jDbscSRgF/k3zmICLe6muAs7YbITZ+61FeUoo1plofYAocoR5Sa1rQ==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!---Navigation Bar--->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="./images/unnamed.jpg"> THUNDER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#restaurants">RESTAURANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/cart">CART</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-----MENU----->
+    <section id="restaurants">
+        <div class="container">
+            <h1>MENU</h1>
+            <div class="row">
+                <%dishes.forEach(function(dish){ %>
+                <div class="col-md-4">
+                    <div class="single">
+                        <div class="name-head">
+                            <h2><%=dish.dish_name%></h2>
+                            <p><span><%=dish.dish_name%></span></p>
+                        </div>
+                        <div class="name-content">
+                            <img class="rest-image" src="<%=dish.dish_imageurl%>">
+                        </div>
+                        <div class="menu-button">
+                            <button data-dish="<%=JSON.stringify(dish)%>" class="sareen">
+                            <span class="menu-btn">Add <%=dish.dish_price%>+ </span></button>
+                        </div>
+                    </div>
+                </div>
+                <% })%>
+
+                <!-- <div class="col-md-4">
+                    <div class="single">
+                        <div class="name-head">
+                            <h2>Burger</h2>
+                            <p><span>Tikki, cheese</span></p>
+                        </div>
+                        <div class="name-content">
+                            <img class="rest-image" src="./images/sipandbite.jpg">
+                        </div>
+                        <div class="menu-button">
+                            <a class="menu-btn" href="#">Add+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-md-4">
+                    <div class="single">
+                        <div class="name-head">
+                            <h2>White Pasta</h2>
+                            <p><span>Capsicum, onion and corn</span></p>
+                        </div>
+                        <div class="name-content">
+                            <img class="rest-image" src="./images/food.jpg">
+                        </div>
+                        <div class="menu-button">
+                            <a class="menu-btn" href="#">Add+</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-4">
+                    <div class="single">
+                        <div class="name-head">
+                            <h2>Red Pasta</h2>
+                            <p><span>Capsicum, onion and corn</span></p>
+                        </div>
+                        <div class="name-content">
+                            <img class="rest-image" src="./images/food.jpg">
+                        </div>
+                        <div class="menu-button">
+                            <a class="menu-btn" href="#">Add+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-md-4">
+                    <div class="single">
+                        <div class="name-head">
+                            <h2>Manchurian</h2>
+                            <p><span>Capsicum, onion and corn</span></p>
+                        </div>
+                        <div class="name-content">
+                            <img class="rest-image" src="./images/food.jpg">
+                        </div>
+                        <div class="menu-button">
+                            <a class="menu-btn" href="#">Add+</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-md-4">
+                    <div class="single">
+                        <div class="name-head">
+                            <h2>Noodles</h2>
+                            <p><span>Capsicum, onion and corn</span></p>
+                        </div>
+                        <div class="name-content">
+                            <img class="rest-image" src="./images/food.jpg">
+                        </div>
+                        <div class="menu-button">
+                            <a class="menu-btn" href="#">Add+</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+ 
+<script  src="js/app.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js" integrity="sha512-mgZL3SZ/vIooDg2mU2amX6NysMlthFl/jDbscSRgF/k3zmICLe6muAs7YbITZ+61FeUoo1plofYAocoR5Sa1rQ==" crossorigin="anonymous"></script> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA==" crossorigin="anonymous" /> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script>
+<script>
+    const synth = window.speechSynthesis;
+    var utter = new SpeechSynthesisUtterance("") ;
+    var dishes=["Pizza", "White Sauce Pasta", "Tomato Soup", "Noodles", "Spring Rolls", "Burger"];
+    var idx = Math.floor((Math.random() * 6) + 1) - 1;
+    var rating=["three star", "four star", "five star"];
+    utter.text=`The most popular dish of this restaurant is ${dishes[idx]}`;
+    synth.speak(utter);
+    idx = Math.floor((Math.random()*3)+1)-1;
+    var rating=["three star", "four star", "five star"];
+    utter.text=`The average rating given to this restaurant by your college buddies is ${rating[idx]} on an average`;
+    synth.speak(utter);
+</script>
+</body>
+
+</html>

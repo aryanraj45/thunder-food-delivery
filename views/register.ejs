@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!---Navigation Bar--->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="./images/unnamed.jpg"> THUNDER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../#price">RESTAURANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../#contact">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!---------Register Here----->
+    <section>
+        <marquee>REGISTER FOR THE FIRST TIME, AND GET Rs. 500 AS BONUS!</marquee>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h1>SIGN UP</h1>
+            <form class="contact-form" method="POST" action="/register">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="phoneno" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="emailid" class="form-control" placeholder="Email Id">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="hostel_room" class="form-control" placeholder="Hostel and Room No.">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="rollno" class="form-control" placeholder="TIET Roll No.">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SIGN UP</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

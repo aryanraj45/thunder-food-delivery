@@ -1,0 +1,104 @@
+<!-- <button id="rzp-button1">Pay</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_tnPHGLOSuXuFNE", // Enter the Key ID generated from the Dashboard
+    "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Cyborg Inc.",
+    "description": "Test Transaction",
+    "image": "https://i.pinimg.com/236x/c3/56/dc/c356dcf8330dc365ba7689184cd07787.jpg",
+    "order_id": "", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature)
+    },
+    "prefill": {
+        "name": "Gaurav Kumar",
+        "email": "gaurav.kumar@example.com",
+        "contact": "9999999999"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Business Website</title>
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css"
+        integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA=="
+        crossorigin="anonymous" />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"
+        integrity="sha512-mgZL3SZ/vIooDg2mU2amX6NysMlthFl/jDbscSRgF/k3zmICLe6muAs7YbITZ+61FeUoo1plofYAocoR5Sa1rQ=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!---Navigation Bar--->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="./images/unnamed.jpg"> THUNDER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#restaurants">RESTAURANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/cart">CART</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section >
+
+        <form action="/payment/success/" method="POST">
+            <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_tnPHGLOSuXuFNE"
+                data-order_id="<%=orderid%>" data-buttontext="Pay with Razorpay" data-name="THUNDER - DELIVERY"
+                data-description="GET FOOD FAST"
+                data-image="https://i.pinimg.com/236x/c3/56/dc/c356dcf8330dc365ba7689184cd07787.jpg"
+                data-prefill.email="<%=useremail%>" data-prefill.contact="<%= phone %>" data-theme.color="#F37254">
+            </script>
+            <br>
+            <input type="hidden" custom="Hidden Element" name="hidden">
+            <input class="border border-grey-400 p-2 w-1/2 mb-4" type="text" placeholder="Phone Number" name="phone">
+            <input class="border border-grey-400 p-2 w-1/2" type="text" placeholder="Address" name="address">
+        </form>
+    </section>

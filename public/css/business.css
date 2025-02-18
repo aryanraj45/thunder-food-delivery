@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------Navigation----------*/
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+}
+
+#nav-bar ul li a:hover {
+    color: #777!important;
+}
+
+.navbar {
+    background: #a41f22;
+}
+.bhavesh {
+    background-color: #a41f22;
+}
+.navbar-toggler {
+    border: none!important;
+}
+
+.nav-link {
+    color: #fff!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/*slider---*/
+
+#slider {
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 550px;
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.carousel-caption h5 {
+    color: #fff;
+    font-size: 42px;
+}
+
+
+/*------about---*/
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#about .btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: #a41f22;
+}
+
+#about-content {
+    padding-top: 20px;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    border-radius: 16px;
+}
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+
+/*-----------Services---------*/
+
+#services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url();
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#services h1 {
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#services h1::after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.services {
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#services p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-md-4:hover {
+    background: #a41f22;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+
+/*----------promo---------*/
+
+
+/*----
+#promo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url();
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+----*/
+
+/*---delivery---*/
+
+#delivered {
+    text-align: center;
+    color: #777;
+    display: block;
+    margin: auto;
+}
+
+#delivered img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/*---------------------------*/
+
+
+/*-------restaurants----*/
+
+#restaurants {
+    padding: 40px 0;
+    background: #efefef;
+}
+
+h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+.single {
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.single:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.name-head {
+    background-color: #a41f22;
+    display: inline;
+    float: left;
+    padding: 5px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.name-head h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+.name-head p {
+    font-size: 10px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+#name span {
+    font-size: 10px;
+}
+
+.name-content {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.name-content .rest-image {
+    height: 250px;
+    width: 100%;
+}
+
+.menu-button {
+    display: inline;
+    float: left;
+    padding: 5px 15px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-btn {
+    background-color: #a41f22;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 40px;
+    transition: 0.5s;
+}
+
+.menu-btn:hover {
+    border-color: 1px solid #fff;
+    background-color: #3f51b1;
+}
+
+a {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+
+/*---------Get n Touch-----*/
+
+#contact {
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+
+.contact-form {
+    padding: 15px;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #fff;
+    text-align: center;
+    background-color: #a41f22 !important;
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 10px 70px;
+    width: 50%;
+}
+
+#contact .no-account {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#contact .no-account a {
+    text-align: center;
+    color: #a41f22!important;
+    margin-bottom: 50px;
+}
+
+::placeholder {
+    color: #999 !important;
+}
+
+.follow {
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contact-info .fa {
+    margin: 10px;
+    color: #a41f22;
+    font-weight: bold;
+}
+
+
+/*---------------------------*/
+
+
+/*----#footer {
+    background: #333;
+    color: #fff;
+    padding: 1px;
+}
+
+.fa-heart-o {
+    margin: 3px;
+    color: red;
+}------/
+
+/* THE WALLET DROP DOWN */
+.dropdown-wallet {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content-wallet {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-wallet:hover .dropdown-content-wallet {
+    display: block;
+  }
