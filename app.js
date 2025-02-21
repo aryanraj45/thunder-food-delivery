@@ -88,3 +88,4 @@ app.get('/payment/success', help.redirectLogin, (req,res)=>{
     res.render('placed');
 })
 app.get('/adminorders' , adminauth, adminordercontroller().index) ; // 1770990872
+// 1770990872
