@@ -9,4 +9,4 @@ module.exports = {
     RAZOR_PAY_KEY_ID: envar.RAZOR_PAY_KEY_ID,
     RAZOR_PAY_KEY_SECRET: envar.RAZOR_PAY_KEY_SECRET,
     TWO_HOURS
-}
+}// 1770990873
