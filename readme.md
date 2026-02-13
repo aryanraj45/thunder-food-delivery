@@ -1,111 +1,23 @@
-# Thunder - Food Delivery App
-Thunder is a food delivery application, created by following the industrial practices of Software Engineering, and maintaining the overall code quality. The model followed is incremental model. The product aims to serve the food delivery ecosystem in the college from the college restaurants by the college vehicles. This also boosts the economy of the ones working inside the campus. The scalability of the project shall be implementing the project in different colleges one by one. # FoodDelivery
-// 1770990843
-// 1770990845
-// 1770990846
-// 1770990846
-// 1770990846
-// 1770990846
-// 1770990846
-// 1770990847
-// 1770990847
-// 1770990847
-// 1770990848
-// 1770990848
-// 1770990848
-// 1770990848
-// 1770990848
-// 1770990849
-// 1770990849
-// 1770990849
-// 1770990872
-// 1770990872
-// 1770990872
-// 1770990873
-// 1770990873
-// 1770990873
-// 1770990873
-// 1770990873
-// 1770990874
-// 1770990874
-// 1770990874
-// 1770990874
-// 1770990874
-// 1770990874
-// 1770990874
-// 1770990874
-// 1770990875
-// 1770990876
-// 1770990876
-// 1770990876
-// 1770990876
-// 1770990877
-// 1770990878
-// 1770990878
-// 1770990878
-// 1770990879
-// 1770990879
-// 1770990879
-// 1770990880
-// 1770990880
-// 1770990880
-// 1770990880
-// 1770990880
-// 1770990880
-// 1770990880
-// 1770990881
-// 1770990881
-// 1770990881
-// 1770990881
-// 1770990881
-// 1770990881
-// 1770990881
-// 1770990881
-// 1770990882
-// 1770990882
-// 1770990882
-// 1770990882
-// 1770990883
-// 1770990883
-// 1770990883
-// 1770990883
-// 1770990883
-// 1770990883
-// 1770990883
-// 1770990884
-// 1770990884
-// 1770990884
-// 1770990885
-// 1770990885
-// 1770990885
-// 1770990885
-// 1770990886
-// 1770990886
-// 1770990886
-// 1770990887
-// 1770990887
-// 1770990888
-// 1770990888
-// 1770990888
-// 1770990889
-// 1770990889
-// 1770990889
-// 1770990889
-// 1770990889
-// 1770990890
-// 1770990890
-// 1770990890
-// 1770990890
-// 1770990891
-// 1770990891
-// 1770990892
-// 1770990892
-// 1770990893
-// 1770990893
-// 1770990893
-// 1770990893
-// 1770990893
-// 1770990894
-// 1770990894
-// 1770990894
-// 1770990894
+# ✨ Welcome to Your Spark Template!
+You've just launched your brand-new Spark Template Codespace — everything’s fired up and ready for you to explore, build, and create with Spark!
+
+This template is your blank canvas. It comes with a minimal setup to help you get started quickly with Spark development.
+
+🚀 What's Inside?
+- A clean, minimal Spark environment
+- Pre-configured for local development
+- Ready to scale with your ideas
+  
+🧠 What Can You Do?
+
+Right now, this is just a starting point — the perfect place to begin building and testing your Spark applications.
+
+🧹 Just Exploring?
+No problem! If you were just checking things out and don’t need to keep this code:
+
+- Simply delete your Spark.
+- Everything will be cleaned up — no traces left behind.
+
+📄 License For Spark Template Resources 
+
+The Spark Template files and resources from GitHub are licensed under the terms of the MIT license, Copyright GitHub, Inc.
